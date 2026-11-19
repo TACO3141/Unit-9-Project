@@ -42,9 +42,9 @@ public class Main
     }
     else
     {
-      Main.tower4(n - 1, start, );
+      Main.tower4(n - 1, start, temp1, temp2, end);
       System.out.println("Move disk" + n + " to " + end);
-      System.out.println();
+      System.out.println("Move disk" + n - 1 + " to " + );
       System.out.println();
       Main.tower4(n - 1,);
     }
