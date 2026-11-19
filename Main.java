@@ -38,15 +38,15 @@ public class Main
     }
     if (n == 1)
     {
-      System.out.println("Move disk" + n + " from rod " + start + " to rod " + end);
+      System.out.println("Move disk " + n + " from rod " + start + " to rod " + end);
     }
     else
     {
-      Main.tower4(n - 1, start, temp1, temp2, end);
-      System.out.println("Move disk" + n + " to " + end);
-      System.out.println("Move disk" + n - 1 + " to " + );
-      System.out.println();
-      Main.tower4(n - 1,);
+      Main.tower4(n - 2, start, temp1, temp2, end);
+      System.out.println("Move disk " + n - 1 + " from rod " + start + " to rod " + temp2);
+      System.out.println("Move disk " + n + " from rod " + start + " to rod " + end);
+      System.out.println("Move disk " + n - 1 + " from rod " + temp2 + " to rod " + end);
+      Main.tower4(n - 2, temp1, start, end, temp2);
     }
   }
 }
